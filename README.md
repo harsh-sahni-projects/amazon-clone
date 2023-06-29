@@ -1,2 +1,2 @@
 # amazon-clone
-Frontend of Aamzon.in using CSS only
+This is the frontend of Aamzon.in using CSS only
