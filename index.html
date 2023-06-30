@@ -15,6 +15,7 @@
 			<div class="nav-logo border">
 				<div class="logo"></div>
 			</div>
+
 			<!-- Address -->
 			<div class="nav-addr border">
 				<p>Deliver to</p>
@@ -23,21 +24,50 @@
 					<p>India</p>
 				</div>
 			</div>
+
 			<!-- Search bar -->
 			<section class="search-bar">
 				
-				<button class="drop-down-btn">
-					All
+				<select class="drop-down-btn">
+					<option>All</option>
+					<!-- <option>Something</option> -->
 					<i class="fa-solid fa-caret-down"></i>
-				</button>
+				</selectn>
 
-				<input type="text" class="search-input" />
+				<input type="text" class="search-input" placeholder="Search Amazon"/>
 				
-				<button class="search-ntn">
+				<button class="search-btn">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</button>
 			</section>
+			<!-- Country -->
+			<div class="country-cont border">
+				<img src="images/india.png" id="flag"/>
+				<p>IN</p>
+				<i class="fa-solid fa-caret-down"></i>
+			</div>
 
+			<!-- Sign-in -->
+			<div class="signin-cont border">
+				<p>Hello, sign in</p>
+				<p>
+					Accounts & Lists 
+					<i class="fa-solid fa-caret-down"></i>
+				</p>
+			</div>
+
+			<!-- Returns -->
+			<div class="returns-cont border">
+				<p>Returns</p>
+				<p>& Orders</p>
+			</div>
+
+			<!-- Cart -->
+			<div class="cart-cont border">
+				<i class="fa-solid fa-cart-shopping"></i>
+				<p class="cart-count">0</p>
+				<p>Cart</p>
+			</div>
 		</div>
 	</header>
 </body>
