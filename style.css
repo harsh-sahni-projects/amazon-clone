@@ -133,6 +133,7 @@ body {
 }
 .cart-cont i {
     font-size: 1.5rem;
+    margin-right: 5px;
 }
 .cart-count {
     color: #febd69;
@@ -148,8 +149,8 @@ body {
     top: 6px;
 }
 
-/* Pannel */
-.pannel {
+/* panel */
+.panel {
     display: flex;
     align-items: center;
     height: 2.5rem;
@@ -158,28 +159,38 @@ body {
     color: white;
     padding-left: 1rem;
 }
-.pannel-all {
+.panel-all {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 0.8rem
 }
-.pannel-all i {
+.panel-all i {
     padding-right: 0.4rem;
     font-size: 16px;
 }
 
-.pannel a {
+.panel a {
     text-decoration: none;
     color: white;
     /* height: 100%; */
 }
-.pannel-options {
+.panel-options {
     display: flex;
     height: 96%;
 }
-.pannel-options div {
+.panel-options div {
     padding: 0px 0.8rem;
     display: flex;
     align-items: center;
 }
+/* ----------- HERO Section ----------- */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
