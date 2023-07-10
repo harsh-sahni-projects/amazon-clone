@@ -4,6 +4,10 @@
     border: border-box; /* border of el will be counted inside border's height-width*/
 }
 
+body {
+    background-color: #aaa;
+}
+
 .border {
     border: 1px solid transparent;
     height: 95%;
@@ -68,17 +72,24 @@
 .search-bar {
     display: flex;
     height: 50%;
+    border: 2px solid transparent;
 }
 .search-input {
     width: 45vw;
     border: none;
     font-size: 1rem;
+    outline: none;
+}
+.search-bar:hover {
+    border: 2px solid #febd69;
+    border-radius: 7px;
 }
 .search-btn {
     background-color: #febd69;
     min-width: 2.5rem;
     border: 0px;
     border-radius: 0px 5px 5px 0px;
+    font-size: 1.2rem;
 }
 .search-btn:hover {
     background-color: #f3a847;
@@ -129,4 +140,46 @@
     position: relative;
     left: -16px;
     bottom: 10px;
+}
+
+.cart-cont .cart-text {
+    font-weight: bold;
+    position: relative;
+    top: 6px;
+}
+
+/* Pannel */
+.pannel {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    background-color: #232f3e;
+    font-size: 14px;
+    color: white;
+    padding-left: 1rem;
+}
+.pannel-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.8rem
+}
+.pannel-all i {
+    padding-right: 0.4rem;
+    font-size: 16px;
+}
+
+.pannel a {
+    text-decoration: none;
+    color: white;
+    /* height: 100%; */
+}
+.pannel-options {
+    display: flex;
+    height: 96%;
+}
+.pannel-options div {
+    padding: 0px 0.8rem;
+    display: flex;
+    align-items: center;
 }
