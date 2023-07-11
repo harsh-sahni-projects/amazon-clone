@@ -187,10 +187,28 @@ body {
 /* ----------- HERO Section ----------- */
 
 .hero {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     font-size: 2rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; */
+    background-image: url("./images/hero_image.jpg");
+    height: 350px;
+    background-size: cover;
+    /* text-align: center; */
+}
+
+.hero-msg {
+    margin: 0px auto;
+    position: relative;
+    top: 250px;
+    background-color: #f5f6f6;
+    padding: 0.5rem 1rem;
+    width: 90%;
+    text-align: center;
+}
+.hero-msg a {
+    text-decoration: none;
+    color: #007185;
 }
 
