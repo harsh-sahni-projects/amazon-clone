@@ -207,6 +207,60 @@ body {
     color: #007185;
 }
 
+/* ---- Conetnt ---- */
+
+.content {
+    display: flex;
+    padding: 1.5rem;
+}
+
+.card-heading {
+    margin-bottom: 1rem;
+    font-size: 21px;
+    color: #0f1111;
+}
+
+.card {
+    width: 20%;
+    /* border: 1px solid; */
+    padding: 1.5rem;
+    background-color: white;
+}
+
+/* Card */
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.card-sm {
+    display: flex;
+    width: 45%; 
+    /* flex-direction: column; */
+    /* border: 4px solid green; */
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.card-sm img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    /* display: inline-block; */
+    /* border: 1px solid red; */
+    font-size: 12px;
+    /* width: 30%; */
+}
+
+.card a {
+    font-size: 13px;
+}
+
+
+/* ---- End ----- */
 .building-msg {
     display: flex;
     justify-content: center;
