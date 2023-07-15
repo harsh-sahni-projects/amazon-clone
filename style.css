@@ -212,6 +212,7 @@ body {
 .content {
     display: flex;
     padding: 1.5rem;
+    justify-content: space-between;
 }
 
 .card-heading {
