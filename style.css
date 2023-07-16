@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #aaa;
+    background-color: #ddd;
 }
 
 .border {
@@ -245,8 +245,9 @@ body {
 }
 
 .card-sm img {
-    width: 100%;
-    margin-bottom: 5px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
 }
 
 .product-description {
