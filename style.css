@@ -238,8 +238,6 @@ body {
 .card-sm {
     display: flex;
     width: 45%; 
-    /* flex-direction: column; */
-    /* border: 4px solid green; */
     flex-direction: column;
     margin-bottom: 1rem;
 }
@@ -250,11 +248,32 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.product-description {
-    /* display: inline-block; */
-    /* border: 1px solid red; */
+.card-md {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.card-md img {
+    width: 100%;
+    height: 75%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.card-sm-discount {
+    background-color: #cc0c39;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.card-md p {
     font-size: 12px;
-    /* width: 30%; */
+    margin-top: 10px;
+}
+
+.product-description {
+    font-size: 12px;
 }
 
 .card a {
