@@ -5,4 +5,4 @@ It is in progress. Below screenshot shows its current state.
 
 Last updated: 2-Aug-2023
 
-<img src="./progress-sc-5.png" style="width:80%">
+<img src="./progress-screenshots/progress-sc-5.png" style="width:80%">
