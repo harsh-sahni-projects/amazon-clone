@@ -321,6 +321,15 @@ body {
     background: #F7CA00
 }
 
+/* ------------ FLIGHT --------- */
+.flight-container {
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.flight-container img {
+    width: 100%;;
+}
 
 /* ---- End ----- */
 .building-msg {
