@@ -1,7 +1,9 @@
 # amazon-clone
-This is the clone of Aamzon website (without any framework) using raw HTML & CSS only.
+I made this clone of Aamzon using raw HTML & CSS only without any framework.
 
-It is in progress. Below screenshot shows its current state.
+[Checkout my "food-order-app" repository (<a href="https://github.com/harsh-sahni-projects/food-order-app">link</a>) which I made using ReactJS]
+
+This clone is in progress currently. Below screenshot shows its current state.
 
 Last updated: 4-Aug-2023
 
