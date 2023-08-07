@@ -331,6 +331,28 @@ body {
     width: 100%;;
 }
 
+
+/* ---------- PHONES-HORIZONTAL-ROW-- */
+.ph-hr-outer-container {
+    margin-block: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ph-hr-img-container {
+    display: flex;
+    justify-content: space-between;
+}
+.ph-hr-img-container img {
+    cursor: pointer;
+}
+
+
+
 /* ---- End ----- */
 .building-msg {
     display: flex;
