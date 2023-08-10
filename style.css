@@ -213,6 +213,7 @@ body {
 .content {
     display: flex;
     padding: 1.5rem;
+    padding-bottom: 0;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -334,7 +335,7 @@ body {
 
 /* ---------- PHONES-HORIZONTAL-ROW-- */
 .ph-hr-outer-container {
-    margin-block: 1.5rem;
+    margin-top: 1.5rem;
     padding: 1.5rem;
     background-color: white;
     width: 100%;
@@ -352,6 +353,37 @@ body {
 }
 
 
+/* ------ Footer -------- */
+.back-to-top {
+    background-color: #37475A;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.footer-quick-links {
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.footer-quick-links ul p {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-quick-links ul a {
+    color: #dddddd;
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.footer-quick-links ul a:hover {
+    text-decoration: underline;
+}
 
 /* ---- End ----- */
 .building-msg {
