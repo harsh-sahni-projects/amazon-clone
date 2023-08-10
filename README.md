@@ -5,6 +5,6 @@ I've made this clone of Amazon using raw HTML & CSS only without any framework.
 
 This clone is in progress currently. Below screenshot shows its current state.
 
-Last updated: 7-Aug-2023
+Last updated: 11-Aug-2023
 
-<img src="./progress-screenshots/progress-sc-7.png" style="width:100%">
+<img src="./progress-screenshots/progress-sc-8.png" style="width:100%">
