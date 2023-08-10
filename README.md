@@ -7,4 +7,6 @@ This clone is in progress currently. Below screenshot shows its current state.
 
 Last updated: 11-Aug-2023
 
+<br/> <br/>
+
 <img src="./progress-screenshots/progress-sc-8.png" style="width:100%">
