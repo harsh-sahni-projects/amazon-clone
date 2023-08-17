@@ -63,10 +63,10 @@
 			</div>
 
 			<!-- Cart -->
-			<div class="cart-cont border">
+			<div class="cart-cont border" onclick=run()>
 				<i class="fa-solid fa-cart-shopping"></i>
 				<!-- <p class="cart-count">0</p> -->
-				<p class="cart-text" onclick=run()>Cart</p>
+				<p class="cart-text">Cart</p>
 			</div>
 		</div>
 
@@ -280,17 +280,44 @@
 			
 		</div>
 
+		<div class="footer-logo-div">
+			<div class="footer-logo"></div>
+		</div>
+
+		<div class="terms">
+			 <ul>
+					<li><a href="#">Conditions of Use & Sale</a></li>
+					<li><a href="#">Privacy Notice</a></li>
+					<li><a href="#">Interest-Based Ads</a></li>
+			 </ul>
+			 <div>
+					© 1996-2023, Amazon.com, Inc. or its affiliates	
+			 </div>
+		</div>
 	</footer>
 
-
-	<div class="building-msg">
-	  Building in progress...
+	<div class="my-credits-container">
+		
 	</div>
 </body>
 
 <script>
   function run() {
-    alert("You clicked on cart button");
+    alert("Your cart is empty");
   }
+
+	let allLinkTags = document.querySelectorAll('a')
+
+	allLinkTags.forEach(tag => {
+		let href = tag.getAttribute('href');
+		if (href == null || href == '#') {
+			console.log('target')
+		} else {
+			console.log('Heck')
+		}
+		// document.getElementsByTagName(tag))
+	})
+
+	console.log()
 </script>
 </html>

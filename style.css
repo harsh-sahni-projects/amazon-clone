@@ -385,13 +385,41 @@ body {
     text-decoration: underline;
 }
 
-/* ---- End ----- */
-.building-msg {
+.footer-logo-div {
+    background-color: #232F3E;
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 40px;
-    height: 100px;
 }
+
+.footer-logo {
+    background-image: url('./images/amazon_logo.png');
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+}
+
+.terms {
+    background-color: #232F3E;
+    color: #dddddd;
+    padding: 2rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.terms a {
+    color: #dddddd;
+    margin-inline: 0.75rem;
+}
+
+.terms ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    
+}
+
+
+
 
