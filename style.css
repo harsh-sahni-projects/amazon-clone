@@ -420,6 +420,68 @@ body {
     
 }
 
+.credits-container {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    color: #333;
+    /* background-color: orange; */
+    background-color: rgba(255,255,255,0.6);
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: all 0.5s;
+    padding: 25px;
+    box-shadow: 0px 0px 10px 5px white;
+}
 
+credits {
+    text-align: center;
+}
+
+name {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.credits-container a {
+    color: #333;
+    text-decoration-style: none;
+    text-decoration: none;
+}
+
+.credits-container linkedin a::after {
+    content: ".............";
+    position: absolute;
+    left: 90px;
+    bottom: 18px;
+}
+.credits-container github a::after {
+    content: "..........";
+    position: absolute;
+    left: 214px;
+    bottom: 18px;
+}
+
+socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 7px;
+}
+
+.hidden {
+    transform: translateY(50px);
+    opacity: 0;
+}
 
 
