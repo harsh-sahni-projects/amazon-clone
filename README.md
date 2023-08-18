@@ -9,4 +9,4 @@ This project showcases the designing abilities and frontend skills.
 
 <br/>
 
-<img src="./progress-screenshots/progress-sc-9.png" style="width:100%">
+<img src="./progress-screenshots/progress-sc-10.png" style="width:100%">
