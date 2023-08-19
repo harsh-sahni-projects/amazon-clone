@@ -24,8 +24,14 @@ body {
     background-color: #0f1111;
     color: white;
     display: flex;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
+    overflow-y: auto;
+}
+
+.navbar > div {
+    flex: 0 0 auto;
 }
 
 .nav-logo {
@@ -150,7 +156,7 @@ body {
     top: 6px;
 }
 
-/* panel */
+/* --------------- panel ------------ */
 .panel {
     display: flex;
     align-items: center;
@@ -179,11 +185,14 @@ body {
 .panel-options {
     display: flex;
     height: 96%;
+    overflow-y: auto;
 }
 .panel-options div {
     padding: 0px 0.8rem;
     display: flex;
     align-items: center;
+    width: max-content;
+    flex: 0 0  auto;
 }
 /* ----------- HERO Section ----------- */
 
@@ -232,6 +241,18 @@ body {
     height: 480px;
     box-sizing: border-box;
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 98% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 48% !important;
+    }
 }
 
 /* Card */
@@ -335,6 +356,7 @@ body {
 
 /* ---------- PHONES-HORIZONTAL-ROW-- */
 .ph-hr-outer-container {
+    box-sizing: border-box;
     margin-top: 1.5rem;
     padding: 1.5rem;
     background-color: white;
@@ -347,6 +369,7 @@ body {
 .ph-hr-img-container {
     display: flex;
     justify-content: space-between;
+    overflow-y: auto;
 }
 .ph-hr-img-container img {
     cursor: pointer;
