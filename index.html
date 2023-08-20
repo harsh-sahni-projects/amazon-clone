@@ -215,7 +215,7 @@
 		</div>
 
 		<div class="ph-hr-outer-container">
-			<h2>Top deals on mobile phones</h2>
+			<h2 class="card-heading">Top deals on mobile phones</h2>
 			<div class="ph-hr-img-container">
 				<img src="images/phone1.jpg" alt="Phone1 Image" />
 				<img src="images/phone1.jpg" alt="Phone1 Image" />
@@ -318,6 +318,38 @@
     alert("Your cart is empty");
   }
 
+	document.addEventListener("DOMContentLoaded", function() {
+		if (document.body.scrollWidth < 768) {
+			// alert("FOR BEST VIEW:- \n\nThis website is best viewed on Desktop screen size. \n\nOn mobile phones, you'll need to scroll horizontally at some positions.")
+
+			setTimeout(() => {
+				document.querySelector('.navbar').classList.add('moreWidth','move');
+			}, 500)
+			setTimeout(() => {
+				document.querySelector('.navbar').classList.remove('move');
+			}, 800);
+			setTimeout(() => {
+				document.querySelector('.navbar').classList.remove('moreWidth');
+			},1100)
+
+			setTimeout(() => {
+				document.querySelector('.panel').classList.add('moreWidth','move');
+			}, 1100)
+			setTimeout(() => {
+				document.querySelector('.panel').classList.remove('move');
+			}, 1400);
+			setTimeout(() => {
+				document.querySelector('.panel').classList.remove('moreWidth');
+			},1700)
+		}
+
+		// ---- Scroll to top - button functionality --------
+		document.getElementsByClassName('back-to-top')[0]
+			.addEventListener('click', () => {
+				window.scrollTo({ top: 0, behavior: 'smooth'})
+			})
+	});
+
 	let allLinkTags = document.querySelectorAll('a')
 
 	allLinkTags.forEach(tag => {
@@ -333,7 +365,11 @@
 	window.addEventListener('scroll', function() {
 		let pageHeight = document.body.scrollHeight;
 		let scrollPosition = window.innerHeight + window.scrollY;
-		let offsetFromBottom = 350; // px
+		let offsetFromBottom = (() => {
+			return (document.body.scrollWidth < 768) 
+						? 1000
+						: 300;
+		})()
 		let targetScrollPosition = pageHeight - offsetFromBottom;
 
 		let el = document.getElementsByClassName('credits-container')[0];
