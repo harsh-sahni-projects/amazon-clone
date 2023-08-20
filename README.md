@@ -17,12 +17,10 @@ For business inquires, lets chat on <a href="https://www.linkedin.com/in/harsh-s
 
 <img src="./progress-screenshots/progress-sc-10.png" style="width:100%">
 
-<br/>
-
 ## Mobile view
 
 <br/>
 
-<img src="./progress-screenshots/Mobile-view.gif" style="width:100%">
+<img src="./progress-screenshots/Mobile-view.gif" style="width:100%" alt="A GIF image will load here showing mobile view">
 
 
