@@ -11,8 +11,18 @@ For business inquires, lets chat on <a href="https://www.linkedin.com/in/harsh-s
 
 (If you want learn more about me, lets connect on linkedin)
 
-## Below is the screenshot of how this clone looks
+## Below is the screenshot of how this clone looks on Desktop
 
 <br/>
 
 <img src="./progress-screenshots/progress-sc-10.png" style="width:100%">
+
+<br/>
+
+## Mobile view
+
+<br/>
+
+<img src="./progress-screenshots/mobile-view.gif" style="width:100%">
+
+
