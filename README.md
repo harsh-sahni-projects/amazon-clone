@@ -23,6 +23,6 @@ For business inquires, lets chat on <a href="https://www.linkedin.com/in/harsh-s
 
 <br/>
 
-<img src="./progress-screenshots/mobile-view.gif" style="width:100%">
+<img src="./progress-screenshots/Mobile-view.gif" style="width:100%">
 
 
