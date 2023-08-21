@@ -355,6 +355,9 @@
 	allLinkTags.forEach(tag => {
 		let href = tag.getAttribute('href');
 		if (href == null || href == '#') {
+			tag.addEventListener('click', (e) => {
+				e.preventDefault();
+			})
 			console.log('target')
 		} else {
 			console.log('Heck')
