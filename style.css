@@ -79,9 +79,11 @@ body {
     display: flex;
     height: 62%;
     border: 2px solid transparent;
+    flex-grow: 1;
 }
 .search-input {
-    width: 45vw;
+    /* width: 45vw; */
+    flex-grow: 1;
     border: none;
     font-size: 1rem;
     outline: none;
@@ -185,7 +187,8 @@ body {
 .panel-options {
     display: flex;
     height: 96%;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .panel-options div {
     padding: 0px 0.8rem;
@@ -194,6 +197,7 @@ body {
     width: max-content;
     flex: 0 0  auto;
 }
+
 /* ----------- HERO Section ----------- */
 
 .hero {
@@ -561,10 +565,15 @@ socials {
     linkedin a::after, github a::after {
         display: none;
     }
+
+
+}
+
+@media (max-width: 768px) {
     .navbar, .panel {
         transition: 0.3s ease;
     }
-
+    
     .navbar.move, .panel.move {
         position: relative;
         transform: translateX(-100px);
@@ -572,5 +581,6 @@ socials {
     .navbar.moreWidth, .panel.moreWidth {
         width: calc(100% + 100px);
     }
+    
 }
 

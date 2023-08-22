@@ -319,9 +319,12 @@
   }
 
 	document.addEventListener("DOMContentLoaded", function() {
-		if (document.body.scrollWidth < 768) {
-			// alert("FOR BEST VIEW:- \n\nThis website is best viewed on Desktop screen size. \n\nOn mobile phones, you'll need to scroll horizontally at some positions.")
+    // ----- HEADER PANNEL OPTIONS WITH REDUCED SCREEN SIZE --------
+    addWithAttToPanelOptions();
+    removeHiddenPannelOptions();
 
+    if (document.body.scrollWidth < 768) {
+			// alert("FOR BEST VIEW:- \n\nThis website is best viewed on Desktop screen size. \n\nOn mobile phones, you'll need to scroll horizontally at some positions.")
 			setTimeout(() => {
 				document.querySelector('.navbar').classList.add('moreWidth','move');
 			}, 500)
@@ -348,22 +351,32 @@
 			.addEventListener('click', () => {
 				window.scrollTo({ top: 0, behavior: 'smooth'})
 			})
+    
+    // ----- Fix # issue from <a> tags
+    let allLinkTags = document.querySelectorAll('a')
+    allLinkTags.forEach(tag => {
+      let href = tag.getAttribute('href');
+      if (href == null || href == '#') {
+        tag.addEventListener('click', (e) => {
+          e.preventDefault();
+        })
+      } 
+    })
 	});
 
-	let allLinkTags = document.querySelectorAll('a')
+  function addWithAttToPanelOptions() {
+    const allDivs = document.querySelector('.panel-options')
+                                .querySelectorAll('div');
+    allDivs.forEach(div => {
+      const width = div.getBoundingClientRect().width;
+      div.setAttribute('data-width', width)
+    })
+  }
 
-	allLinkTags.forEach(tag => {
-		let href = tag.getAttribute('href');
-		if (href == null || href == '#') {
-			tag.addEventListener('click', (e) => {
-				e.preventDefault();
-			})
-			console.log('target')
-		} else {
-			console.log('Heck')
-		}
-		// document.getElementsByTagName(tag))
-	})
+  
+  window.addEventListener('resize', () => {
+    removeHiddenPannelOptions();
+  });
 
 	window.addEventListener('scroll', function() {
 		let pageHeight = document.body.scrollHeight;
@@ -382,6 +395,31 @@
 			el.classList.add('hidden');
 		}
 	})
+
+  function removeHiddenPannelOptions() {
+    if (window.innerWidth < 768) return; // "Keep" the scroll bar for smaller screens
+
+    const allDivs = document.querySelector('.panel-options')
+                                .querySelectorAll('div');
+    const availableWidth = document.querySelector('.panel');
+    let panelAllDetails = document.querySelector('.panel-all').getBoundingClientRect()
+    let marginForSafety = 20;
+    let currentWidth = panelAllDetails.x + panelAllDetails.width + marginForSafety;
+    let windowWidth = window.innerWidth;
+    
+    let cantAddMore = false;
+    for (let div of allDivs) {
+      let divWidth = parseFloat(div.getAttribute('data-width'),10);
+      let widthAfterAdding = currentWidth + divWidth;
+      if (widthAfterAdding < windowWidth) {
+        div.style.display = (cantAddMore) ? 'none' : 'flex';
+        currentWidth += divWidth;
+      } else {
+        div.style.display = 'none';
+        cantAddMore = true;
+      }
+    }
+  }
 
 </script>
 </html>
