@@ -18,7 +18,7 @@ For business enquires, lets chat on <a href="https://www.linkedin.com/in/harsh-s
 <img src="./progress-screenshots/progress-sc-11.png" style="width:100%">
 
 ## 2. Mobile view
-(The below GIF may take 4-5s to load here, depending on your internet speed)
+(The below GIF may take 2-3s to load here, depending on your internet speed)
 
 <br/>
 
