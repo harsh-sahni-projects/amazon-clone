@@ -22,6 +22,6 @@ For business enquires, lets chat on <a href="https://www.linkedin.com/in/harsh-s
 
 <br/>
 
-<img src="./progress-screenshots/Mobile-view-2.gif" style="width:100%" alt="A GIF image will load here showing mobile view">
+<img src="./progress-screenshots/Mobile-view-2.gif" style="width:100%" alt="A GIF image will load here showing mobile view"> 
 
 
