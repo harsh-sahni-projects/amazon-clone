@@ -259,6 +259,9 @@ body {
     justify-content: space-between;
     height: 360px;
 }
+.card-content.card-top-deal {
+    justify-content: center;
+}
 
 .card a {
     /* position: absolute; */
@@ -266,8 +269,9 @@ body {
 }
 .card-sm {
     display: flex;
-    width: 45%; 
     flex-direction: column;
+    align-items: center;
+    width: 45%; 
     margin-bottom: 1rem;
 }
 
@@ -278,8 +282,9 @@ body {
 }
 
 .card-md {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-md img {
@@ -293,6 +298,7 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    max-height: 340px;
 }
 
 .card-sm-discount {
@@ -300,15 +306,15 @@ body {
     color: white;
     padding: 3px;
     border-radius: 3px;
+    width: fit-content;
 }
 
 .card-md p {
-    font-size: 12px;
     margin-top: 10px;
 }
 
 .product-description {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .card a {
