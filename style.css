@@ -218,6 +218,11 @@ body {
     width: 80%;
     text-align: center;
 }
+@media screen and (min-width: 1680px) {
+    .hero-msg {
+        display: none;
+    }
+}
 .hero-msg a {
     text-decoration: none;
     color: #007185;
